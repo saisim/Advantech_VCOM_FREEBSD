@@ -1,0 +1,119 @@
+program eki_vcom_freebsd;
+
+{$mode objfpc}{$H+}
+
+uses
+  BaseUnix, Unix, Sockets, SysUtils;
+
+const
+  BUF_SIZE = 2048;
+  DEFAULT_DEV = '/dev/ttyEKI0';
+  RECONNECT_DELAY = 5; // Seconds to wait between retries
+
+function openpty(var amaster: Integer; var aslave: Integer; name: PChar; 
+                 termp: Pointer; winp: Pointer): Integer; cdecl; external 'util';
+
+function ttyname(fd: Integer): PChar; cdecl; external 'c'; // Linked from libc
+
+var
+  master_fd, slave_fd, sock_fd: Integer;
+  server_addr: TInetSockAddr;
+  buffer: array[0..BUF_SIZE-1] of Byte;
+  read_fds: TFDSet;
+  n_bytes: Integer;
+  max_fd: Integer;
+  eki_ip: string;
+  eki_port: Integer;
+
+function ConnectToEKI(): Boolean;
+begin
+  Result := False;
+  sock_fd := fpsocket(AF_INET, SOCK_STREAM, 0);
+  if sock_fd < 0 then Exit;
+
+  server_addr.sin_family := AF_INET;
+  server_addr.sin_port := htons(eki_port);
+  server_addr.sin_addr.s_addr := LongWord(StrToNetAddr(eki_ip));
+
+  WriteLn('Attempting to connect to EKI-1362 at ', eki_ip, '...');
+  if fpconnect(sock_fd, @server_addr, sizeof(server_addr)) = 0 then
+  begin
+    WriteLn('Connected successfully.');
+    Result := True;
+  end
+  else
+  begin
+    WriteLn('Connection failed. Retrying in ', RECONNECT_DELAY, ' seconds...');
+    fpshutdown(sock_fd, 2);
+    fpclose(sock_fd);
+    sleep(RECONNECT_DELAY * 1000);
+  end;
+end;
+
+begin
+  if ParamCount < 2 then
+  begin
+    WriteLn('Usage: eki_vcom <EKI_IP> <Port>');
+    Halt(1);
+  end;
+
+  eki_ip := ParamStr(1);
+  eki_port := StrToIntDef(ParamStr(2), 1011);
+
+  // 1. Setup Virtual TTY (Persistent)
+  if openpty(master_fd, slave_fd, nil, nil, nil) = -1 then
+  begin
+    WriteLn('Error: openpty failed.');
+    Halt(1);
+  end;
+
+  Fpunlink(DEFAULT_DEV);
+  fpsymlink(PChar(ttyname(slave_fd)), PChar(DEFAULT_DEV));
+  WriteLn('Virtual COM persistent at: ', DEFAULT_DEV);
+
+  // 2. Main Outer Loop for Persistence
+  while True do
+  begin
+    if ConnectToEKI() then
+    begin
+      // 3. Inner Data Bridge Loop
+      max_fd := master_fd;
+      if sock_fd > max_fd then max_fd := sock_fd;
+
+      while True do
+      begin
+        fpFD_ZERO(read_fds);
+        fpFD_SET(master_fd, read_fds);
+        fpFD_SET(sock_fd, read_fds);
+
+        // Select with a 1-second timeout so we can check if the socket is still alive
+        if fpSelect(max_fd + 1, @read_fds, nil, nil, nil) > 0 then
+        begin
+          // Data from Virtual TTY -> Network
+          if fpFD_ISSET(master_fd, read_fds) <> 0 then
+          begin
+            n_bytes := fpread(master_fd, buffer, BUF_SIZE);
+            if (n_bytes > 0) then
+            begin
+              if fpwrite(sock_fd, buffer, n_bytes) < 0 then break; // Socket write error
+            end;
+          end;
+
+          // Data from Network -> Virtual TTY
+          if fpFD_ISSET(sock_fd, read_fds) <> 0 then
+          begin
+            n_bytes := fpread(sock_fd, buffer, BUF_SIZE);
+            if n_bytes > 0 then 
+              fpwrite(master_fd, buffer, n_bytes)
+            else if n_bytes = 0 then 
+              break; // Peer closed connection
+          end;
+        end;
+      end; // End Inner Loop
+
+      WriteLn('Connection lost.');
+      fpshutdown(sock_fd, 2);
+      fpclose(sock_fd);
+    end;
+  end; // End Outer Loop
+end.

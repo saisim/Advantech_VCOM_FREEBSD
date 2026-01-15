@@ -1,0 +1,89 @@
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:25:40.803 Info] Advantech EKI VCOM Daemon for FreeBSD started.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:25:40.804 Warning] 
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:25:40.804 Warning] 
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:25:40.804 Info] [TTY0] Virtual device /dev/ttyADV0 -> /dev/pts/9 ready.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:25:40.804 Info] [TTY0] Connecting to 192.168.11.10:5300...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:25:40.804 Info] [TTY1] Virtual device /dev/ttyADV1 -> /dev/pts/10 ready.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:25:40.804 Info] [TTY1] Connecting to 192.168.11.10:5301...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:25:40.815 Info] [TTY1] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:25:40.815 Info] [TTY0] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:26:40.841 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:26:40.841 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:26:45.842 Info] [TTY0] Connecting to 192.168.11.10:5300...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:26:45.846 Info] [TTY0] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:26:54.714 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:26:54.714 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:26:59.714 Info] [TTY1] Connecting to 192.168.11.10:5301...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:26:59.724 Info] [TTY1] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:27:45.890 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:27:45.890 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:27:50.891 Info] [TTY0] Connecting to 192.168.11.10:5300...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:27:50.898 Info] [TTY0] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:27:59.772 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:27:59.773 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:28:04.773 Info] [TTY1] Connecting to 192.168.11.10:5301...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:28:04.783 Info] [TTY1] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:28:50.940 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:28:50.940 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:28:55.940 Info] [TTY0] Connecting to 192.168.11.10:5300...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:28:55.948 Info] [TTY0] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:29:04.809 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:29:04.809 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:29:09.809 Info] [TTY1] Connecting to 192.168.11.10:5301...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:29:09.816 Info] [TTY1] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:29:55.967 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:29:55.967 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:30:00.967 Info] [TTY0] Connecting to 192.168.11.10:5300...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:30:00.981 Info] [TTY0] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:30:09.838 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:30:09.839 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:30:14.839 Info] [TTY1] Connecting to 192.168.11.10:5301...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:30:14.845 Info] [TTY1] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:31:01.013 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:31:01.014 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:31:06.014 Info] [TTY0] Connecting to 192.168.11.10:5300...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:31:06.026 Info] [TTY0] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:31:14.880 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:31:14.880 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:31:19.880 Info] [TTY1] Connecting to 192.168.11.10:5301...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:31:19.890 Info] [TTY1] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:32:06.057 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:32:06.057 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:32:11.058 Info] [TTY0] Connecting to 192.168.11.10:5300...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:32:11.065 Info] [TTY0] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:32:19.917 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:32:19.917 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:32:24.917 Info] [TTY1] Connecting to 192.168.11.10:5301...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:32:24.925 Info] [TTY1] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:33:11.103 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:33:11.103 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:33:16.103 Info] [TTY0] Connecting to 192.168.11.10:5300...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:33:16.122 Info] [TTY0] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:33:24.945 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:33:24.945 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:33:29.945 Info] [TTY1] Connecting to 192.168.11.10:5301...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:33:29.956 Info] [TTY1] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:34:16.162 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:34:16.163 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:34:21.163 Info] [TTY0] Connecting to 192.168.11.10:5300...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:34:21.173 Info] [TTY0] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:34:29.991 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:34:29.991 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:34:34.991 Info] [TTY1] Connecting to 192.168.11.10:5301...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:34:35.000 Info] [TTY1] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:35:21.204 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:35:21.204 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:35:26.204 Info] [TTY0] Connecting to 192.168.11.10:5300...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:35:26.209 Info] [TTY0] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:35:35.028 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:35:35.028 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:35:40.029 Info] [TTY1] Connecting to 192.168.11.10:5301...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:35:40.045 Info] [TTY1] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:36:26.228 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:36:26.228 Info] [TTY0] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:36:31.229 Info] [TTY0] Connecting to 192.168.11.10:5300...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:36:31.249 Info] [TTY0] Connected successfully
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:36:40.095 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:36:40.096 Info] [TTY1] Connection lost.
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:36:45.096 Info] [TTY1] Connecting to 192.168.11.10:5301...
+Advantech VCOM (eki_vcom_freebsd). [2026-01-15 21:36:45.104 Info] [TTY1] Connected successfully
